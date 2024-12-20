@@ -32,100 +32,98 @@ void conv_litros_para_mililitros(){
         printf("\a\nO valor precisa ser um numero positivo.");
     }
     
-    
-    
 }
 
 /*
- * Função: conv_kelvin_fahrenheit
+ * Função: conv_mililitros_para_litros
  * ------------------------------
- * Converte uma temperatura de Kelvin para Fahrenheit.
+ * Converte um valor de mililitros para litros.
  *
  * Parâmetros:
- *  - valor_k: temperatura em Kelvin a ser convertida.
+ *  - valor: valor para converter.
+ *  - valor_convertido: valor convertido.
  *
  * Retorno:
- *  - O valor da temperatura convertido para Fahrenheit.
+ *  - Sem retorno. Imprime a conversão na tela.
  *
  * Observação:
- *  - Temperaturas em Kelvin não podem ser negativas. 
- *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ *  
  */
 void conv_mililitros_para_litros(){
 
 }
 
 /*
- * Função: conv_kelvin_fahrenheit
+ * Função: conv_metros_cubicos_para_litros
  * ------------------------------
- * Converte uma temperatura de Kelvin para Fahrenheit.
+ * Converte um valor de metros cúbicos para litros.
  *
  * Parâmetros:
- *  - valor_k: temperatura em Kelvin a ser convertida.
+ *  - valor: valor para converter.
+ *  - valor_convertido: valor convertido.
  *
  * Retorno:
- *  - O valor da temperatura convertido para Fahrenheit.
+ *  - Sem retorno. Imprime a conversão na tela.
  *
  * Observação:
- *  - Temperaturas em Kelvin não podem ser negativas. 
- *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ *  
  */
 void conv_metros_cubicos_para_litros(){
 
 }
 
 /*
- * Função: conv_kelvin_fahrenheit
+ * Função: conv_litros_para_metros_cubicos
  * ------------------------------
- * Converte uma temperatura de Kelvin para Fahrenheit.
+ * Converte um valor de litros para metros cúbicos.
  *
  * Parâmetros:
- *  - valor_k: temperatura em Kelvin a ser convertida.
+ *  - valor: valor para converter.
+ *  - valor_convertido: valor convertido.
  *
  * Retorno:
- *  - O valor da temperatura convertido para Fahrenheit.
+ *  - Sem retorno. Imprime a conversão na tela.
  *
  * Observação:
- *  - Temperaturas em Kelvin não podem ser negativas. 
- *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ *  
  */
 void conv_litros_para_metros_cubicos(){
 
 }
 
 /*
- * Função: conv_kelvin_fahrenheit
+ * Função: conv_mililitros_para_metros_cubicos
  * ------------------------------
- * Converte uma temperatura de Kelvin para Fahrenheit.
+ * Converte um valor de mililitros para metros cúbicos.
  *
  * Parâmetros:
- *  - valor_k: temperatura em Kelvin a ser convertida.
+ *  - valor: valor para converter.
+ *  - valor_convertido: valor convertido.
  *
  * Retorno:
- *  - O valor da temperatura convertido para Fahrenheit.
+ *  - Sem retorno. Imprime a conversão na tela.
  *
  * Observação:
- *  - Temperaturas em Kelvin não podem ser negativas. 
- *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ *  
  */
 void conv_mililitros_para_metros_cubicos(){
 
 }
 
 /*
- * Função: conv_kelvin_fahrenheit
+ * Função: conv_metros_cubicos_para_mililitros
  * ------------------------------
- * Converte uma temperatura de Kelvin para Fahrenheit.
+ * Converte um valor de metros cúbicos para mililitros.
  *
  * Parâmetros:
- *  - valor_k: temperatura em Kelvin a ser convertida.
+ *  - valor: valor para converter.
+ *  - valor_convertido: valor convertido.
  *
  * Retorno:
- *  - O valor da temperatura convertido para Fahrenheit.
+ *  - Sem retorno. Imprime a conversão na tela.
  *
  * Observação:
- *  - Temperaturas em Kelvin não podem ser negativas. 
- *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ *  
  */
 void conv_metros_cubicos_para_mililitros(){
 
