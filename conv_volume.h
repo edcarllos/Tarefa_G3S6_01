@@ -1,42 +1,39 @@
 #include <stdio.h>
 
-//exemplo de comentario para as funções
-
 /*
- * Função: conv_kelvin_fahrenheit
+ * Função: conv_litros_para_mililitros
  * ------------------------------
- * Converte uma temperatura de Kelvin para Fahrenheit.
+ * Converte um valor de litros para mililitros.
  *
  * Parâmetros:
- *  - valor_k: temperatura em Kelvin a ser convertida.
+ *  - valor: valor para converter.
+ *  - valor_convertido: valor convertido.
  *
  * Retorno:
- *  - O valor da temperatura convertido para Fahrenheit.
+ *  - Sem retorno. Imprime a conversão na tela.
  *
  * Observação:
- *  - Temperaturas em Kelvin não podem ser negativas. 
- *    A função pode retornar resultados incorretos se um valor inválido for passado.
- */
-
-
-
-/*
- * Função: conv_kelvin_fahrenheit
- * ------------------------------
- * Converte uma temperatura de Kelvin para Fahrenheit.
- *
- * Parâmetros:
- *  - valor_k: temperatura em Kelvin a ser convertida.
- *
- * Retorno:
- *  - O valor da temperatura convertido para Fahrenheit.
- *
- * Observação:
- *  - Temperaturas em Kelvin não podem ser negativas. 
- *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ *  
  */
 void conv_litros_para_mililitros(){
+    double valor, valor_convertido;
 
+    printf("\a\nDigite o valor a ser convertido: ");
+    scanf("%lf", &valor);
+
+    if (valor >= 0)
+    {
+        valor_convertido = valor * 1000;
+
+        printf("\a\n%.2lf litros equivalem a %.0lf mililitros.\n", valor, valor_convertido);
+    }
+    else
+    {
+        printf("\a\nO valor precisa ser um numero positivo.");
+    }
+    
+    
+    
 }
 
 /*
