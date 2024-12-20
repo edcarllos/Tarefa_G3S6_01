@@ -118,7 +118,22 @@ void conv_metros_cubicos_para_litros(){
  *  
  */
 void conv_litros_para_metros_cubicos(){
+    double valor, valor_convertido;
 
+    printf("\a\nDigite o valor a ser convertido: ");
+    scanf("%lf", &valor);
+
+    if (valor >= 0)
+    {
+        valor_convertido = valor / 1000;
+
+        printf("\a\n%.2lf litros equivalem a %.2lf metros cubicos.\n", valor, valor_convertido);
+    }
+    else
+    {
+        printf("\a\nO valor precisa ser um numero positivo.");
+    }
+    
 }
 
 /*
