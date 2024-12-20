@@ -20,32 +20,135 @@
 
 
 
-
+/*
+ * Função: conv_kelvin_fahrenheit
+ * ------------------------------
+ * Converte uma temperatura de Kelvin para Fahrenheit.
+ *
+ * Parâmetros:
+ *  - valor_k: temperatura em Kelvin a ser convertida.
+ *
+ * Retorno:
+ *  - O valor da temperatura convertido para Fahrenheit.
+ *
+ * Observação:
+ *  - Temperaturas em Kelvin não podem ser negativas. 
+ *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ */
 void conv_litros_para_mililitros(){
 
 }
 
+/*
+ * Função: conv_kelvin_fahrenheit
+ * ------------------------------
+ * Converte uma temperatura de Kelvin para Fahrenheit.
+ *
+ * Parâmetros:
+ *  - valor_k: temperatura em Kelvin a ser convertida.
+ *
+ * Retorno:
+ *  - O valor da temperatura convertido para Fahrenheit.
+ *
+ * Observação:
+ *  - Temperaturas em Kelvin não podem ser negativas. 
+ *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ */
 void conv_mililitros_para_litros(){
 
 }
 
+/*
+ * Função: conv_kelvin_fahrenheit
+ * ------------------------------
+ * Converte uma temperatura de Kelvin para Fahrenheit.
+ *
+ * Parâmetros:
+ *  - valor_k: temperatura em Kelvin a ser convertida.
+ *
+ * Retorno:
+ *  - O valor da temperatura convertido para Fahrenheit.
+ *
+ * Observação:
+ *  - Temperaturas em Kelvin não podem ser negativas. 
+ *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ */
 void conv_metros_cubicos_para_litros(){
 
 }
 
+/*
+ * Função: conv_kelvin_fahrenheit
+ * ------------------------------
+ * Converte uma temperatura de Kelvin para Fahrenheit.
+ *
+ * Parâmetros:
+ *  - valor_k: temperatura em Kelvin a ser convertida.
+ *
+ * Retorno:
+ *  - O valor da temperatura convertido para Fahrenheit.
+ *
+ * Observação:
+ *  - Temperaturas em Kelvin não podem ser negativas. 
+ *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ */
 void conv_litros_para_metros_cubicos(){
 
 }
 
+/*
+ * Função: conv_kelvin_fahrenheit
+ * ------------------------------
+ * Converte uma temperatura de Kelvin para Fahrenheit.
+ *
+ * Parâmetros:
+ *  - valor_k: temperatura em Kelvin a ser convertida.
+ *
+ * Retorno:
+ *  - O valor da temperatura convertido para Fahrenheit.
+ *
+ * Observação:
+ *  - Temperaturas em Kelvin não podem ser negativas. 
+ *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ */
 void conv_mililitros_para_metros_cubicos(){
 
 }
 
+/*
+ * Função: conv_kelvin_fahrenheit
+ * ------------------------------
+ * Converte uma temperatura de Kelvin para Fahrenheit.
+ *
+ * Parâmetros:
+ *  - valor_k: temperatura em Kelvin a ser convertida.
+ *
+ * Retorno:
+ *  - O valor da temperatura convertido para Fahrenheit.
+ *
+ * Observação:
+ *  - Temperaturas em Kelvin não podem ser negativas. 
+ *    A função pode retornar resultados incorretos se um valor inválido for passado.
+ */
 void conv_metros_cubicos_para_mililitros(){
 
 }
 
-
+/*
+ * Função: interface_conv_volume
+ * ------------------------------
+ * Menu de interface para escolher a opção de conversão a ser realizada.
+ *
+ * Parâmetros:
+ *  - opcao: numero da opção escolhida.
+ *
+ * Retorno:
+ *  - não possui retorno.
+ *
+ * Observação:
+ *  - a função  de conversão específica é chamada de acordo com o número de opção escolhido. 
+ *   
+ */
 void interface_conv_volume(){
     int opcao;
 
