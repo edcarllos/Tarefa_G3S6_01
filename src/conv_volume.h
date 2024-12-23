@@ -4,7 +4,7 @@
  * Converte um valor de litros para mililitros.
  *
  * Parâmetros:
- *  -Sem paramentros de entrada. A entrada é solicitada dentro da função.
+ *  - Sem parâmetros de entrada. A entrada é solicitada dentro da função.
  *
  * Retorno:
  *  - Sem retorno. Imprime a conversão na tela.
