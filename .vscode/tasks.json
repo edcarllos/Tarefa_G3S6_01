@@ -11,6 +11,7 @@
                 "-g3",
                 "${workspaceFolder}/src/main.c",
                 "${workspaceFolder}/src/conv_volume.c",
+                "${workspaceFolder}/src/conv_temperatura.c",
                 "-o",
                 "${workspaceFolder}/output/conversor"
             ],
