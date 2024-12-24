@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include "conv_temperatura.h"
+#include "conv_volume.h"
 
 /*
  * Função: Interface do Usuário
@@ -15,14 +17,16 @@
  *
  */
 
-int main(void){
+int main(void)
+{
     int tam = 0, opcao = 0;
     char opcao1[50];
 
     setlocale(LC_ALL, "Portuguese");
 
     // Apresentação e execução do menu.
-    do {
+    do
+    {
         printf("\n ***********************************************************************************************************************\n");
         printf("\t\t\t\t\t\t\t MENU ");
         printf("\n ***********************************************************************************************************************\n");
@@ -40,11 +44,14 @@ int main(void){
         scanf("%[^\n]", opcao1);
         scanf("%*c");
 
-        do{
-            for (tam = 0; opcao1[tam] != '\0'; tam++); // Conta a quantidade de caracteres digigitados.
+        do
+        {
+            for (tam = 0; opcao1[tam] != '\0'; tam++)
+                ; // Conta a quantidade de caracteres digigitados.
 
             // Valida se o que foi digitado está dentro das opções disponíveis para o menu.
-            if (tam > 1) { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor do menu tem mais de um caracter.
+            if (tam > 1)
+            { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor do menu tem mais de um caracter.
                 printf("\n ***********************************************************************************************************************\n");
                 printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                 printf("\n ***********************************************************************************************************************\n"
@@ -52,7 +59,8 @@ int main(void){
                 scanf("%[^\n]", opcao1);
                 scanf("%*c");
             }
-            else if (opcao1[0] < '0' || opcao1[0] > '8'){ // Caso não seja maior que um, testa também se está em um intervalo válido para o menu, de 0 a 9.
+            else if (opcao1[0] < '0' || opcao1[0] > '8')
+            { // Caso não seja maior que um, testa também se está em um intervalo válido para o menu, de 0 a 9.
                 printf("\n ***********************************************************************************************************************\n");
                 printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                 printf("\n ***********************************************************************************************************************\n"
@@ -68,7 +76,8 @@ int main(void){
 
         opcao = opcao1[0] - 48;
 
-        switch (opcao){
+        switch (opcao)
+        {
         // Sair.
         case 0:
             printf("\n ******************************** Fim da execução. Obrigada por utiliar o programa! ;) *********************************\n");
@@ -87,11 +96,14 @@ int main(void){
             scanf("%*c");
 
             // Valida se o que foi digitado está entre as opções disponíveis.
-            do{
-                for (tam = 0; opcao1[tam] != '\0'; tam++); // Conta a quantidade de caracteres digigitados.
+            do
+            {
+                for (tam = 0; opcao1[tam] != '\0'; tam++)
+                    ; // Conta a quantidade de caracteres digigitados.
 
                 // Valida se o que foi digitado está dentro das opções disponíveis para o menu.
-                if (tam > 1) { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
+                if (tam > 1)
+                { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -99,7 +111,8 @@ int main(void){
                     scanf("%[^\n]", opcao1);
                     scanf("%*c");
                 }
-                else if (opcao1[0] < '0' || opcao1[0] > '1'){ // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
+                else if (opcao1[0] < '0' || opcao1[0] > '1')
+                { // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -110,7 +123,8 @@ int main(void){
             } while (tam != 1);
 
             // Se o usuário escolher sair.
-            if (opcao1[0] == '0') {
+            if (opcao1[0] == '0')
+            {
                 printf("\nFim da execução. Obrigada por utiliar o programa! ;) \n");
                 opcao = 0;
                 break;
@@ -135,12 +149,14 @@ int main(void){
             scanf("%*c");
 
             // Valida se o que foi digitado está entre as opções disponíveis.
-            do{
+            do
+            {
                 for (tam = 0; opcao1[tam] != '\0'; tam++)
                     ; // Conta a quantidade de caracteres digigitados.
 
                 // Valida se o que foi digitado está dentro das opções disponíveis para o menu.
-                if (tam > 1){ // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
+                if (tam > 1)
+                { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -148,7 +164,8 @@ int main(void){
                     scanf("%[^\n]", opcao1);
                     scanf("%*c");
                 }
-                else if (opcao1[0] < '0' || opcao1[0] > '1'){ // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
+                else if (opcao1[0] < '0' || opcao1[0] > '1')
+                { // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -159,7 +176,8 @@ int main(void){
             } while (tam != 1);
 
             // Se o usuário escolher sair.
-            if (opcao1[0] == '0') {
+            if (opcao1[0] == '0')
+            {
                 printf("\nFim da execução. Obrigada por utiliar o programa! ;) \n");
                 opcao = 0;
                 break;
@@ -184,11 +202,14 @@ int main(void){
             scanf("%*c");
 
             // Valida se o que foi digitado está entre as opções disponíveis.
-            do {
-                for (tam = 0; opcao1[tam] != '\0'; tam++); // Conta a quantidade de caracteres digigitados.
+            do
+            {
+                for (tam = 0; opcao1[tam] != '\0'; tam++)
+                    ; // Conta a quantidade de caracteres digigitados.
 
                 // Valida se o que foi digitado está dentro das opções disponíveis para o menu.
-                if (tam > 1){ // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
+                if (tam > 1)
+                { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -196,7 +217,8 @@ int main(void){
                     scanf("%[^\n]", opcao1);
                     scanf("%*c");
                 }
-                else if (opcao1[0] < '0' || opcao1[0] > '1'){ // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
+                else if (opcao1[0] < '0' || opcao1[0] > '1')
+                { // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -207,7 +229,8 @@ int main(void){
             } while (tam != 1);
 
             // Se o usuário escolher sair.
-            if (opcao1[0] == '0'){
+            if (opcao1[0] == '0')
+            {
                 printf("\nFim da execução. Obrigada por utiliar o programa! ;) \n");
                 opcao = 0;
                 break;
@@ -232,11 +255,14 @@ int main(void){
             scanf("%*c");
 
             // Valida se o que foi digitado está entre as opções disponíveis.
-            do{
-                for (tam = 0; opcao1[tam] != '\0'; tam++); // Conta a quantidade de caracteres digigitados.
+            do
+            {
+                for (tam = 0; opcao1[tam] != '\0'; tam++)
+                    ; // Conta a quantidade de caracteres digigitados.
 
                 // Valida se o que foi digitado está dentro das opções disponíveis para o menu.
-                if (tam > 1){ // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
+                if (tam > 1)
+                { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -244,7 +270,8 @@ int main(void){
                     scanf("%[^\n]", opcao1);
                     scanf("%*c");
                 }
-                else if (opcao1[0] < '0' || opcao1[0] > '1'){ // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
+                else if (opcao1[0] < '0' || opcao1[0] > '1')
+                { // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -255,7 +282,8 @@ int main(void){
             } while (tam != 1);
 
             // Se o usuário escolher sair.
-            if (opcao1[0] == '0'){
+            if (opcao1[0] == '0')
+            {
                 printf("\nFim da execução. Obrigada por utiliar o programa! ;) \n");
                 opcao = 0;
                 break;
@@ -280,11 +308,14 @@ int main(void){
             scanf("%*c");
 
             // Valida se o que foi digitado está entre as opções disponíveis.
-            do{
-                for (tam = 0; opcao1[tam] != '\0'; tam++); // Conta a quantidade de caracteres digigitados.
+            do
+            {
+                for (tam = 0; opcao1[tam] != '\0'; tam++)
+                    ; // Conta a quantidade de caracteres digigitados.
 
                 // Valida se o que foi digitado está dentro das opções disponíveis para o menu.
-                if (tam > 1){ // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
+                if (tam > 1)
+                { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -292,7 +323,8 @@ int main(void){
                     scanf("%[^\n]", opcao1);
                     scanf("%*c");
                 }
-                else if (opcao1[0] < '0' || opcao1[0] > '1'){ // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
+                else if (opcao1[0] < '0' || opcao1[0] > '1')
+                { // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -303,7 +335,8 @@ int main(void){
             } while (tam != 1);
 
             // Se o usuário escolher sair.
-            if (opcao1[0] == '0') {
+            if (opcao1[0] == '0')
+            {
                 printf("\nFim da execução. Obrigada por utiliar o programa! ;) \n");
                 opcao = 0;
                 break;
@@ -328,12 +361,14 @@ int main(void){
             scanf("%*c");
 
             // Valida se o que foi digitado está entre as opções disponíveis.
-            do {
+            do
+            {
                 for (tam = 0; opcao1[tam] != '\0'; tam++)
                     ; // Conta a quantidade de caracteres digigitados.
 
                 // Valida se o que foi digitado está dentro das opções disponíveis para o menu.
-                if (tam > 1) { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
+                if (tam > 1)
+                { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -341,7 +376,8 @@ int main(void){
                     scanf("%[^\n]", opcao1);
                     scanf("%*c");
                 }
-                else if (opcao1[0] < '0' || opcao1[0] > '1'){ // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
+                else if (opcao1[0] < '0' || opcao1[0] > '1')
+                { // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -352,7 +388,8 @@ int main(void){
             } while (tam != 1);
 
             // Se o usuário escolher sair.
-            if (opcao1[0] == '0') {
+            if (opcao1[0] == '0')
+            {
                 printf("\nFim da execução. Obrigada por utiliar o programa! ;) \n");
                 opcao = 0;
                 break;
@@ -377,11 +414,14 @@ int main(void){
             scanf("%*c");
 
             // Valida se o que foi digitado está entre as opções disponíveis.
-            do {
-                for (tam = 0; opcao1[tam] != '\0'; tam++); // Conta a quantidade de caracteres digigitados.
+            do
+            {
+                for (tam = 0; opcao1[tam] != '\0'; tam++)
+                    ; // Conta a quantidade de caracteres digigitados.
 
                 // Valida se o que foi digitado está dentro das opções disponíveis para o menu.
-                if (tam > 1){ // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
+                if (tam > 1)
+                { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -389,7 +429,8 @@ int main(void){
                     scanf("%[^\n]", opcao1);
                     scanf("%*c");
                 }
-                else if (opcao1[0] < '0' || opcao1[0] > '1') { // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
+                else if (opcao1[0] < '0' || opcao1[0] > '1')
+                { // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -400,7 +441,8 @@ int main(void){
             } while (tam != 1);
 
             // Se o usuário escolher sair.
-            if (opcao1[0] == '0'){
+            if (opcao1[0] == '0')
+            {
                 printf("\nFim da execução. Obrigada por utiliar o programa! ;) \n");
                 opcao = 0;
                 break;
@@ -425,11 +467,14 @@ int main(void){
             scanf("%*c");
 
             // Valida se o que foi digitado está entre as opções disponíveis.
-            do{
-                for (tam = 0; opcao1[tam] != '\0'; tam++); // Conta a quantidade de caracteres digigitados.
+            do
+            {
+                for (tam = 0; opcao1[tam] != '\0'; tam++)
+                    ; // Conta a quantidade de caracteres digigitados.
 
                 // Valida se o que foi digitado está dentro das opções disponíveis para o menu.
-                if (tam > 1){ // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
+                if (tam > 1)
+                { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -437,7 +482,8 @@ int main(void){
                     scanf("%[^\n]", opcao1);
                     scanf("%*c");
                 }
-                else if (opcao1[0] < '0' || opcao1[0] > '1'){ // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
+                else if (opcao1[0] < '0' || opcao1[0] > '1')
+                { // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -448,7 +494,8 @@ int main(void){
             } while (tam != 1);
 
             // Se o usuário escolher sair.
-            if (opcao1[0] == '0'){
+            if (opcao1[0] == '0')
+            {
                 printf("\nFim da execução. Obrigada por utiliar o programa! ;) \n");
                 opcao = 0;
                 break;
@@ -473,11 +520,14 @@ int main(void){
             scanf("%*c");
 
             // Valida se o que foi digitado está entre as opções disponíveis.
-            do{
-                for (tam = 0; opcao1[tam] != '\0'; tam++); // Conta a quantidade de caracteres digigitados.
+            do
+            {
+                for (tam = 0; opcao1[tam] != '\0'; tam++)
+                    ; // Conta a quantidade de caracteres digigitados.
 
                 // Valida se o que foi digitado está dentro das opções disponíveis para o menu.
-                if (tam > 1){ // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
+                if (tam > 1)
+                { // Testa se o tamanho da stirng é maior que um, se for retorna como inválido, pois nenhum valor no menu tem mais de um caracter.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -485,7 +535,8 @@ int main(void){
                     scanf("%[^\n]", opcao1);
                     scanf("%*c");
                 }
-                else if (opcao1[0] < '0' || opcao1[0] > '1'){ // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
+                else if (opcao1[0] < '0' || opcao1[0] > '1')
+                { // Caso não seja maior que um, testa também se está em um intervalo válido para este menu, de 0 a 1.
                     printf("\n ***********************************************************************************************************************\n");
                     printf("\t\t\t\t\tOPÇÃO INVÁLIDA! Por favor, escolha novamente. ");
                     printf("\n ***********************************************************************************************************************\n"
@@ -496,7 +547,8 @@ int main(void){
             } while (tam != 1);
 
             // Se o usuário escolher sair.
-            if (opcao1[0] == '0'){
+            if (opcao1[0] == '0')
+            {
                 printf("\nFim da execução. Obrigada por utiliar o programa! ;) \n");
                 opcao = 0;
                 break;
