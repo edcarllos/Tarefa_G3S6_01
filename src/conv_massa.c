@@ -14,6 +14,9 @@ double conv_quilo_para_tonelada(double q){
     return q/1000.0;
 }
 
+double conv_tonelada_para_quilo(double t){
+    return t*1000.0;
+}
 
 
 
