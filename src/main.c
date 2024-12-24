@@ -4,6 +4,7 @@
 #include "conv_temperatura.h"
 #include "conv_volume.h"
 #include "conv_tempo.h"
+#include "conv_massa.h"
 
 /*
  * Função: Interface do Usuário
@@ -140,8 +141,7 @@ int main(void)
 
         // Conversão entre: Quilograma, grama e tonelada.
         case 2:
-            // TODO: Implementar
-            // interface_conv_massa();
+            interface_conv_massa();
 
             // Menu para o usuário escolher se quer sair a partir daqui ou se deseja voltar para o menu.
             printf("\nO que você deseja? \n"
