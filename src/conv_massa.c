@@ -22,6 +22,12 @@ double conv_grama_para_tonelada(double g){
     return g/1000000.0;
 }
 
+double conv_tonelada_para_grama(double t){
+    return t*1000000.0;
+}
+
+
+
 
 
 
