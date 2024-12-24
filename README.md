@@ -8,6 +8,9 @@ Este projeto é um programa CLI (Command Line Interface) desenvolvido em C, como
 
 O programa suporta as seguintes conversões:
 
+- **Área:**
+  - Metro Quadrado (m²) ↔ Centímetro Quadrado (cm²)
+
 - **Comprimento:**
   - Metros (m) ↔ Centímetros (cm)
   - Metros (m) ↔ Milímetros (mm)
@@ -46,11 +49,18 @@ O programa suporta as seguintes conversões:
 .
 ├── src
 │   ├── main.c              # Ponto de entrada do programa
-│   ├── conv_comprimento.h  # Conversões de comprimento
-│   ├── conv_massa.h        # Conversões de massa
-│   ├── conv_volume.h       # Conversões de volume
-│   ├── conv_temperatura.h  # Conversões de temperatura
-│   └── conv_tempo.h        # Conversões de tempo
+│   ├── conv_area.c         # Conversões de área (implementação)
+│   ├── conv_area.h         # Conversões de área (definição)
+│   ├── conv_comprimento.c  # Conversões de comprimento (implementação)
+│   ├── conv_comprimento.h  # Conversões de comprimento (definição)
+│   ├── conv_massa.c        # Conversões de massa (implementação)
+│   ├── conv_massa.h        # Conversões de massa (definição)
+│   ├── conv_volume.c       # Conversões de volume (implementação)
+│   ├── conv_volume.h       # Conversões de volume (definição)
+│   ├── conv_temperatura.c  # Conversões de temperatura (implementação)
+│   ├── conv_temperatura.h  # Conversões de temperatura (definição)
+│   └── conv_tempo.c        # Conversões de tempo (implementação)
+│   └── conv_tempo.h        # Conversões de tempo (definição)
 ├── README.md               # Documentação do projeto
 └── LICENSE                 # Licença do projeto
 ```
