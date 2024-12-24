@@ -8,5 +8,6 @@ double minutos_para_segundos(double minutos);
 double minutos_para_horas(double minutos);
 double horas_para_segundos(double horas);
 double horas_para_minutos(double horas);
+void interface_conv_tempo();
 
 #endif // CONV_TEMPO_H

@@ -12,6 +12,7 @@
                 "${workspaceFolder}/src/main.c",
                 "${workspaceFolder}/src/conv_volume.c",
                 "${workspaceFolder}/src/conv_temperatura.c",
+                "${workspaceFolder}/src/conv_tempo.c",
                 "-o",
                 "${workspaceFolder}/output/conversor"
             ],
