@@ -51,8 +51,6 @@ O programa suporta as seguintes conversões:
 │   ├── conv_volume.h       # Conversões de volume
 │   ├── conv_temperatura.h  # Conversões de temperatura
 │   └── conv_tempo.h        # Conversões de tempo
-├── tests
-│   └── test_cases.c        # Testes unitários
 ├── README.md               # Documentação do projeto
 └── LICENSE                 # Licença do projeto
 ```
