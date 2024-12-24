@@ -85,7 +85,8 @@ int main(void)
 
         // Conversão entre: Metro, centímetro e milímetro.
         case 1:
-            interface_conv_comprimento();
+            // TODO: Implementar
+            // interface_conv_comprimento();
 
             // Menu para o usuário escolher se quer sair a partir daqui ou se deseja voltar para o menu.
             printf("\nO que você deseja? \n"
@@ -138,7 +139,8 @@ int main(void)
 
         // Conversão entre: Quilograma, grama e tonelada.
         case 2:
-            interface_conv_massa();
+            // TODO: Implementar
+            // interface_conv_massa();
 
             // Menu para o usuário escolher se quer sair a partir daqui ou se deseja voltar para o menu.
             printf("\nO que você deseja? \n"
@@ -297,7 +299,8 @@ int main(void)
 
         // Conversão entre: Km/h, m/s e mph.
         case 5:
-            interface_conv_velocidade();
+            // TODO: Implementar
+            // interface_conv_velocidade();
 
             // Menu para o usuário escolher se quer sair a partir daqui ou se deseja voltar para o menu.
             printf("\nO que você deseja? \n"
@@ -350,7 +353,8 @@ int main(void)
 
         // Conversão entre: Watts (W), quilowatts (kW) e cavalos-vapor (cv ou hp).
         case 6:
-            interface_conv_potencia();
+            // TODO: Implementar
+            // interface_conv_potencia();
 
             // Menu para o usuário escolher se quer sair a partir daqui ou se deseja voltar para o menu.
             printf("\nO que você deseja? \n"
@@ -403,7 +407,8 @@ int main(void)
 
         // Conversão entre: Metro quadrado e centímetro quadrado.
         case 7:
-            interface_conv_area();
+            // TODO: Implementar
+            // interface_conv_area();
 
             // Menu para o usuário escolher se quer sair a partir daqui ou se deseja voltar para o menu.
             printf("\nO que você deseja? \n"
@@ -456,7 +461,8 @@ int main(void)
 
         // Conversão entre: Segundos, minutos e horas.
         case 8:
-            interface_conv_tempo();
+            // TODO: Implementar
+            // interface_conv_tempo();
 
             // Menu para o usuário escolher se quer sair a partir daqui ou se deseja voltar para o menu.
             printf("\nO que você deseja? \n"
@@ -509,7 +515,8 @@ int main(void)
 
         // Conversão entre: Bits, bytes, kilobytes (KB), megabytes (MB), gigabytes (GB) e terabytes (TB).
         case 9:
-            interface_conv_armazenamento();
+            // TODO: Implementar
+            // interface_conv_armazenamento();
 
             // Menu para o usuário escolher se quer sair a partir daqui ou se deseja voltar para o menu.
             printf("\nO que você deseja? \n"
