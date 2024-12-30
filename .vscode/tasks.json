@@ -10,6 +10,7 @@
                 "-Wextra",
                 "-g3",
                 "${workspaceFolder}/src/main.c",
+                "${workspaceFolder}/src/conv_area.c",
                 "${workspaceFolder}/src/conv_massa.c",
                 "${workspaceFolder}/src/conv_temperatura.c",
                 "${workspaceFolder}/src/conv_tempo.c",

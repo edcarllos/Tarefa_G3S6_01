@@ -5,6 +5,7 @@
 #include "conv_volume.h"
 #include "conv_tempo.h"
 #include "conv_massa.h"
+#include "conv_area.h"
 
 /*
  * Função: Interface do Usuário
@@ -299,8 +300,7 @@ int main(void)
         // Conversão entre: Metro quadrado e centímetro quadrado.
         case 5:
             // TODO: Implementar
-            printf("\nO  MEMBRO CLÁUDIO TENTOU ENVIAR SUAS CONTRIBUIÇÕES, CONTUDO NÃO RECEBEMOS AS MODIFICAÇÕES EM NOSSO REPOSITÓRIO DEVIDO A ALGUM IMPEDIMENTO TÉCNICO NO GITHUB. O USUÁRIO DEVE ENVIAR, EM SUA RESPOSTA DA ATIVIDADE, UMA CÓPIA DO REPOSITÓRIO LOCAL DELE POR GARANTIA.");
-            // interface_conv_area();
+            interface_conv_area();
 
             // Menu para o usuário escolher se quer sair a partir daqui ou se deseja voltar para o menu.
             printf("\nO que você deseja? \n"
